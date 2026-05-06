@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ site.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="{{ site.description_short }}">
+		<meta name="author" content="{{ site.author.name }}">
+		<meta name="robots" content="max-image-preview:large">
+		<link rel="canonical" href="{{ site.url }}/">
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="/assets/css/style.css">
+
+		<!-- Scripts -->
+		<script src="/assets/js/main.js" defer></script>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/assets/favicons/site.webmanifest">
+		<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- OpenGraph -->
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="{{ site.title }}">
+		<meta property="og:url" content="{{ site.url }}/">
+		<meta property="og:locale" content="{{ site.locale }}">
+		<meta property="og:title" content="{{ site.title }} | {{ site.tagline }}">
+		<meta property="og:description" content="{{ site.description_long }}">
+		<meta property="og:image" content="https://headshotfotozas.hu/assets/images/og_image.webp">
+
+		<!-- Twitter/X Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@szabokaphoto">
+		<meta name="twitter:creator" content="@szabokaphoto">
+		<meta name="twitter:title" content="{{ site.title }} | {{ site.tagline }}">
+		<meta name="twitter:description" content="{{ site.description_long }}">
+		<meta name="twitter:image" content="https://headshotfotozas.hu/assets/images/og_image.webp">
+		<meta name="twitter:image:alt" content="{{ site.title }} | {{ site.tagline }}">
+
+		<!-- Ahrefs Analytics -->
+		<!-- <script src="https://analytics.ahrefs.com/analytics.js" data-key="3fFNg02C3K8g1RxCZId+tQ" async></script> -->
+	</head>
+
+	<body>
+		{{ content }}
+	</body>
+</html>

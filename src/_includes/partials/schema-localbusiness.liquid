@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "LocalBusiness",
+	"name": "{{ site.brand.name }}",
+	"image": "{{ site.url }}/assets/images/roland.webp",
+	"description": "{{ site.description_short }}",
+	"url": "{{ site.url }}/",
+	"telephone": "{{ site.author.telephone }}",
+	"email": "{{ site.author.email }}",
+	"priceRange": "{{ site.brand.price }} {{ site.brand.currency }}",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Rózsakert utca 19/C",
+		"postalCode": "1223",
+		"addressLocality": "Budapest",
+		"addressRegion": "Pest megye",
+		"addressCountry": "HU"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": "47.405104",
+		"longitude": "19.006075"
+	},
+	"openingHoursSpecification": [{
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+			"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+		],
+		"opens": "00:00",
+		"closes": "23:59"
+	}],
+	"sameAs": {{ site.author.sameAs | jsonify }}
+}
+</script>

@@ -1,0 +1,29 @@
+{
+	"title": "Headshot Fotózás Budapest",
+	"tagline": "Professzionális első benyomás azoknak, akik nem szeretnek fotózkodni.",
+	"description_short": "Headshot fotózás Budapesten azoknak, akik nem szeretnek fotózkodni. Természetes, profi portrék LinkedInre, CV-hez és weboldalra.",
+	"description_long": "Professzionális headshot fotózás Budapesten LinkedIn profilképhez, CV-hez, üzleti portréhoz és céges bemutatkozáshoz. Nyugodt hangulat, folyamatos segítség és természetes végeredmény azoknak is, akik nem szeretnek fotózkodni.",
+	"description_person": "Szabó Roland budapesti portréfotós, aki természetes headshotokat és üzleti portrékat készít azoknak, akik nem érzik magukat komfortosan a kamera előtt.",
+	"url": "https://headshotfotozas.hu",
+	"lang": "hu",
+	"locale": "hu_HU",
+	"author": {
+		"name": "Szabó Roland",
+		"jobTitle": "Fotós",
+		"description": "Szabó Roland budapesti portréfotós, aki természetes headshotokat és üzleti portrékat készít azoknak, akik nem érzik magukat komfortosan a kamera előtt.",
+		"email": "hi@rolandszabo.photo",
+		"telephone": "+36205914620",
+		"sameAs": [
+			"https://maps.app.goo.gl/3itsmpJDEug53kox7",
+			"https://www.linkedin.com/in/szaboka",
+			"https://www.instagram.com/rolandszabophoto",
+			"https://www.facebook.com/szaboka89"
+		]
+	},
+	"brand": {
+		"name": "Headshot Fotózás",
+		"price": "44 990",
+		"currency": "HUF",
+		"areaServed": "Budapest és Pest megye"
+	}
+}

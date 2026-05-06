@@ -1,0 +1,14 @@
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "{{ site.author.name }}",
+	"jobTitle": "{{ site.author.jobTitle }}",
+	"url": "{{ site.url }}/",
+	"image": "{{ site.url }}/assets/images/roland.webp",
+	"description": "{{ site.description_person }}",
+	"telephone": "{{ site.author.telephone }}",
+	"email": "{{ site.author.email }}",
+	"sameAs": {{ site.author.sameAs | jsonify }}
+}
+</script>
