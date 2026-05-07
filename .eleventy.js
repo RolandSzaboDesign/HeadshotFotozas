@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget("src/assets/js");
 	eleventyConfig.setQuietMode(true);
 
-	// --- IMAGE SHORTCODE ---
+	// --- GALLERY IMAGE SHORTCODE ---
 	async function imageShortcode(
 		src,
 		alt,
@@ -60,6 +60,45 @@ module.exports = function (eleventyConfig) {
 	}
 
 	eleventyConfig.addAsyncShortcode("image", imageShortcode);
+
+	// --- EXAMPLE IMAGE SHORTCODE ---
+	async function exampleImageShortcode(
+		src,
+		alt,
+		sizes = `
+			(max-width: 767px) calc(100vw - 2rem),
+			(max-width: 1399px) calc((100vw - 9rem) / 2),
+			670px
+		`
+	) {
+		let metadata = await Image(src, {
+			widths: [400, 600, 800],
+			formats: ["webp"],
+			urlPath: "/assets/images/generated/examples/",
+			outputDir: "./public/assets/images/generated/examples/",
+			filenameFormat: function(id, src, width, format) {
+				const { name } = path.parse(src);
+				return `${name}-${width}.${format}`;
+			},
+			sharpWebpOptions: {
+				quality: 80
+			}
+		});
+
+		let imageAttributes = {
+			alt,
+			sizes,
+			loading: "lazy",
+			decoding: "async",
+			class: "example__image"
+		};
+
+		return Image.generateHTML(metadata, imageAttributes, {
+			whitespaceMode: "inline"
+		});
+	}
+
+	eleventyConfig.addAsyncShortcode("exampleImage", exampleImageShortcode);
 
 	// --- DIRECTORIES ---
 	return {
