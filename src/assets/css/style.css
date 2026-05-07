@@ -54,14 +54,6 @@ html { box-sizing: border-box; }
 @font-face {
   font-family: 'Commissioner';
   font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/assets/webfonts/commissioner-v24-latin-ext-600.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Commissioner';
-  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url('/assets/webfonts/commissioner-v24-latin-ext-700.woff2') format('woff2');
@@ -356,7 +348,6 @@ ol.list {
 a {
 	cursor: pointer;
 	color: var(--green);
-	white-space: nowrap;
 	text-decoration: none;
 	border-bottom: 1px dashed var(--text-light);
 	transition: .25s color, .25s background-color;
@@ -426,10 +417,11 @@ figcaption {
 	display: inline-block;
 	padding: 1.5rem 3.5rem;
 	font: inherit;
-	font-weight: 600;
+	font-weight: 700;
 	color: var(--text-dark);
 	letter-spacing: -.5px;
 	text-transform: uppercase;
+	white-space: nowrap;
 	border: 0;
 	border-radius: 99rem;
 	background-color: var(--green);
@@ -549,7 +541,7 @@ figcaption {
 }
 
 .title__span {
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 80%;
 	letter-spacing: -1px;
 }
