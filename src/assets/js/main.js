@@ -58,7 +58,7 @@ const lightbox = document.getElementById('lightbox');
 const prevBtn = lightbox.querySelector('.lightbox__arrow--prev');
 const nextBtn = lightbox.querySelector('.lightbox__arrow--next');
 const closeBtn = lightbox.querySelector('.lightbox__close');
-const caption = lightbox.querySelector('.lightbox__caption');
+// const caption = lightbox.querySelector('.lightbox__caption');
 const lightboxOverlay = lightbox.querySelector('.lightbox__overlay');
 
 const prevImg = lightbox.querySelector('.lightbox__image--prev');
@@ -80,7 +80,7 @@ function updateLightboxImages(index) {
 	nextImg.src = next.dataset.highres;
 	nextImg.alt = next.alt || '';
 
-	caption.textContent = current.alt || '';
+	// caption.textContent = current.alt || '';
 	activeIndex = index;
 }
 
