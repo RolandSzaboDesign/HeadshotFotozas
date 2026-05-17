@@ -85,6 +85,7 @@ html { box-sizing: border-box; }
 	line-height: 1;
 }
 
+.fa-check-circle:before { content: "\f058"; }
 .fa-info-circle:before { content: "\f05a"; }
 .fa-star:before { content: "\f005"; }
 .fa-xmark:before { content: "\f00d"; }
