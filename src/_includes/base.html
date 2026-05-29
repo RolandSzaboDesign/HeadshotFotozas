@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{{ site.description_short }}">
 		<meta name="author" content="{{ site.author.name }}">
-		<meta name="robots" content="max-image-preview:large">
+		<meta name="robots" content="{{ page.robots | default: 'max-image-preview:large' }}">
 		<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 		<!-- Webfont Preload -->

@@ -42,7 +42,7 @@ module.exports = function (eleventyConfig) {
 			sizes,
 			loading: "lazy",
 			decoding: "async",
-			class: "gallery__photo js-lightbox"
+			class: "gallery__image js-lightbox"
 		};
 
 		const originalSrc = src.replace("./src", "");
