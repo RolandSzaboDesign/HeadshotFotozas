@@ -1169,6 +1169,14 @@ SECTIONS
 	position: relative;
 }
 
+@media only screen and (max-width: 575.98px) {
+	.about__summary {
+		grid-template-columns: 7.2rem 1fr;
+		grid-gap: 0 1.6rem;
+		padding: 1.6rem 6rem 1.6rem 1.6rem;
+	}
+}
+
 @media only screen and (min-width: 576px) {
 	.about__summary {
 		grid-template-columns: 8.8rem 1fr;
