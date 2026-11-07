@@ -94,12 +94,6 @@
 
 	const form = document.querySelector('form[name="kapcsolat"]');
 	if (!form) return;
-	// Capture only named campaign parameters, never send form PII to Google.
-	const query = new URLSearchParams(window.location.search);
-	for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']) {
-		const field = form.elements.namedItem(key);
-		if (field) field.value = (query.get(key) || '').slice(0, 200);
-	}
 	let submitting = false;
 	form.addEventListener('submit', async event => {
 		event.preventDefault();
