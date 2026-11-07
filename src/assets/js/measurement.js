@@ -68,7 +68,7 @@
 	settings?.addEventListener('click', () => {
 		if (!banner) return;
 		banner.hidden = false;
-		banner.querySelector('button')?.focus();
+		banner.querySelector('[data-consent="denied"]')?.focus();
 	});
 	document.querySelector('[data-consent-privacy]')?.addEventListener('click', () => {
 		if (typeof window.openModal === 'function') window.openModal();
