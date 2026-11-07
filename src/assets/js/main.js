@@ -54,7 +54,9 @@ window.addEventListener('keydown', (e) => {
 
 
 // Lightbox
+(() => {
 const lightbox = document.getElementById('lightbox');
+if (!lightbox) return;
 const prevBtn = lightbox.querySelector('.lightbox__arrow--prev');
 const nextBtn = lightbox.querySelector('.lightbox__arrow--next');
 const closeBtn = lightbox.querySelector('.lightbox__close');
@@ -140,3 +142,4 @@ lightbox.addEventListener('touchend', (e) => {
 }, { passive: true });
 
 lightboxOverlay.addEventListener('click', hideLightbox);
+})();
