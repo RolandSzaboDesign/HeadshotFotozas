@@ -2356,3 +2356,10 @@ body.scroll-lock {
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
 .mb-3 { margin-bottom: 3rem; }
+
+/* Native dialogs confine keyboard focus to the active overlay. */
+dialog.modal, dialog.lightbox { max-width: none; max-height: none; margin: 0; padding: 0; border: 0; }
+dialog::backdrop { background: transparent; }
+dialog.modal:not([open]), dialog.lightbox:not([open]) { display: none; }
+dialog.modal[open], dialog.lightbox[open] { visibility: visible; opacity: 1; pointer-events: auto; transition: none; }
+.gallery__image[role="button"]:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }

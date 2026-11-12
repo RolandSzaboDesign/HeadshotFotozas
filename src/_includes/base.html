@@ -10,26 +10,26 @@
 		<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 		<!-- Webfont Preload -->
-		<link rel="preload" href="/assets/webfonts/commissioner-v24-latin-ext-300.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/assets/webfonts/commissioner-v24-latin-ext-700.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/assets/webfonts/commissioner-v24-latin-ext-800.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="{{ '/assets/webfonts/commissioner-v24-latin-ext-300.woff2' | assetUrl }}" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="{{ '/assets/webfonts/commissioner-v24-latin-ext-700.woff2' | assetUrl }}" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="{{ '/assets/webfonts/commissioner-v24-latin-ext-800.woff2' | assetUrl }}" as="font" type="font/woff2" crossorigin>
 
 		<!-- Styles -->
-		<link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="/assets/css/landing.css">
-		<link rel="stylesheet" href="/assets/css/measurement.css?v=20261107-4">
+		<link rel="stylesheet" href="{{ '/assets/css/style.css' | assetUrl }}">
+        <link rel="stylesheet" href="{{ '/assets/css/landing.css' | assetUrl }}">
+		<link rel="stylesheet" href="{{ '/assets/css/measurement.css' | assetUrl }}">
 
 		<!-- Scripts -->
-		<script src="/assets/js/main.js?v=20261112-1" defer></script>
-		<script src="/assets/js/measurement.js?v=20261112-1" defer></script>
+		<script src="{{ '/assets/js/main.js' | assetUrl }}" defer></script>
+		<script src="{{ '/assets/js/measurement.js' | assetUrl }}" defer></script>
 
 		<!-- Favicons -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-		<link rel="manifest" href="/assets/favicons/site.webmanifest">
-		<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | assetUrl }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | assetUrl }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | assetUrl }}">
+		<link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | assetUrl }}">
+		<link rel="mask-icon" href="{{ '/assets/favicons/safari-pinned-tab.svg' | assetUrl }}" color="#5bbad5">
+		<link rel="shortcut icon" href="{{ '/assets/favicons/favicon.ico' | assetUrl }}">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
@@ -37,7 +37,7 @@
 		<!-- OpenGraph -->
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="{{ site.title }}">
-		<meta property="og:url" content="{{ site.url }}/">
+		<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 		<meta property="og:locale" content="{{ site.locale }}">
 		<meta property="og:title" content="{{ site.seo_title }}">
 		<meta property="og:description" content="{{ site.description_long }}">

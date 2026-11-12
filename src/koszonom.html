@@ -2,6 +2,7 @@
 layout: base.html
 title: Köszönöm!
 robots: "noindex, nofollow"
+eleventyExcludeFromCollections: true
 ---
 
 <main>
@@ -13,7 +14,7 @@ robots: "noindex, nofollow"
 				<p>Általában 1–2 órán belül felhívlak, hogy átbeszéljük a kérdéseidet és a lehetséges időpontokat. &nbsp;<i class="fas fa-check-circle text-green"></i></p>
 			<p>A visszahíváskérés még nem jelent foglalást. Ha addig is kérdésed van, keress a <a href="tel:+36205914620">+36 20 591 4620</a> számon.</p>
 </div>
-			<img class="mt-3" src="/assets/images/og_image.webp" alt="Nemsokára találkozunk!" width="1200" height="630">
+			<img class="mt-3" src="{{ '/assets/images/og_image.webp' | assetUrl }}" alt="Nemsokára találkozunk!" width="1200" height="630">
 		</div>
 	</header>
 </main>

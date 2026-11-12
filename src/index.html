@@ -2,8 +2,8 @@
 layout: base.html
 title: Üzleti Portré
 ---
-<link rel="preload" as="image" href="/assets/images/hero.webp" fetchpriority="high">
-<link rel="stylesheet" href="/assets/css/hero-print.css">
+<link rel="preload" as="image" href="{{ '/assets/images/hero.webp' | assetUrl }}" fetchpriority="high">
+<link rel="stylesheet" href="{{ '/assets/css/hero-print.css' | assetUrl }}">
 <main>
 	<section class="section hero hero--print">
 		<header class="container hero__grid">
@@ -25,7 +25,7 @@ title: Üzleti Portré
 			<figure class="hero__visual">
 				<svg class="hero-print-clip hero-print-clip--back" viewBox="0 0 44 104" aria-hidden="true" focusable="false"><path d="M5 17V76C5 100 39 100 39 76V30" /></svg>
 				<div class="hero__image-card">
-					<img class="hero__image" src="/assets/images/hero.webp" alt="Headshot portré világos stúdióháttér előtt" width="1000" height="1500" loading="eager" decoding="async" fetchpriority="high">
+					<img class="hero__image" src="{{ '/assets/images/hero.webp' | assetUrl }}" alt="Headshot portré világos stúdióháttér előtt" width="1000" height="1500" loading="eager" decoding="async" fetchpriority="high">
 				</div>
 				<svg class="hero-print-clip hero-print-clip--front" viewBox="0 0 44 104" aria-hidden="true" focusable="false"><path d="M14 31V73C14 86 30 86 30 73V17C30-1 5-1 5 17" /></svg>
 			</figure>
@@ -49,20 +49,20 @@ title: Üzleti Portré
                 <summary>További portrék megtekintése</summary>
                 <div class="gallery gallery--more">
 {% image "./src/assets/images/gallery/01.webp", "Női üzleti portré fekete felsőben, világosszürke stúdióháttérrel" %}
-{% image "./src/assets/images/gallery/02.webp", "Barátságos férfi üzleti portré összefont karral stúdióban" %}
+{% image "./src/assets/images/gallery/02.webp", "Férfi üzleti portré szemüvegben és zöld ingben" %}
 {% image "./src/assets/images/gallery/03.webp", "Mosolygós női portré piros ruhában, világos háttér előtt" %}
-{% image "./src/assets/images/gallery/05.webp", "Mosolygó női portré élénk pink ruhában üzleti fotózáson" %}
+{% image "./src/assets/images/gallery/05.webp", "Férfi headshot sötét zakóban és fehér ingben" %}
 {% image "./src/assets/images/gallery/06.webp", "Mosolygós előadói portré mikrofonnal, mintás felsőben" %}
-{% image "./src/assets/images/gallery/08.webp", "Mosolygó nő portréfotózáson mikrofonnal a kezében" %}
-{% image "./src/assets/images/gallery/09.webp", "Vidám férfi headshot szemüvegben világos háttér előtt" %}
-{% image "./src/assets/images/gallery/11.webp", "Elegáns férfi üzleti portré öltönyben és nyakkendőben" %}
-{% image "./src/assets/images/gallery/13.webp", "Fiatal férfi headshot fehér ingben sötét háttér előtt" %}
+{% image "./src/assets/images/gallery/08.webp", "Női portré fehér felsőben, világos stúdióháttér előtt" %}
+{% image "./src/assets/images/gallery/09.webp", "Férfi üzleti portré fekete öltönyben és nyakkendőben" %}
+{% image "./src/assets/images/gallery/11.webp", "Mosolygó férfi portré világos ingben és bordó nyakkendőben" %}
+{% image "./src/assets/images/gallery/13.webp", "Férfi előadói portré mikrofonnal, mintás ingben" %}
 {% image "./src/assets/images/gallery/14.webp", "Férfi üzleti portré fehér ingben, zakóval a vállán" %}
-{% image "./src/assets/images/gallery/15.webp", "Férfi portré mikrofonnal természetes stúdióvilágításban" %}
-{% image "./src/assets/images/gallery/16.webp", "Férfi headshot fehér ingben zakóval a vállán" %}
-{% image "./src/assets/images/gallery/17.webp", "Fiatal férfi üzleti portré sötét ingben" %}
-{% image "./src/assets/images/gallery/19.webp", "Férfi üzleti portré sötétkék zakóban és fehér ingben" %}
-{% image "./src/assets/images/gallery/20.webp", "Professzionális női headshot fekete zakóban világos háttér előtt" %}
+{% image "./src/assets/images/gallery/15.webp", "Férfi headshot sötét ingben, világos háttér előtt" %}
+{% image "./src/assets/images/gallery/16.webp", "Mosolygó női portré fehér mellényben" %}
+{% image "./src/assets/images/gallery/17.webp", "Férfi üzleti portré kék zakóban és fehér ingben" %}
+{% image "./src/assets/images/gallery/19.webp", "Férfi portré szemüvegben és kék pulóverben" %}
+{% image "./src/assets/images/gallery/20.webp", "Mosolygó férfi üzleti portré szürke ingben, összefont karral" %}
 {% image "./src/assets/images/gallery/21.webp", "Mosolygó női üzleti portré fekete garbóban világosszürke háttér előtt" %}
 {% image "./src/assets/images/gallery/23.webp", "Mosolygós női portré bézs hidzsábban, stúdióban" %}
 {% image "./src/assets/images/gallery/24.webp", "Férfi üzleti portré fehér ingben természetes mosollyal" %}
@@ -74,35 +74,35 @@ title: Üzleti Portré
         <div class="container photographer-grid">
             <div class="photographer-copy">
                 <div class="photographer-heading">
-                    <img src="/assets/images/roland.webp" alt="Szabó Roland portréfotós" width="100" height="100" loading="lazy" decoding="async">
+                    <img src="{{ '/assets/images/roland.webp' | assetUrl }}" alt="Szabó Roland portréfotós" width="100" height="100" loading="lazy" decoding="async">
                     <h2 class="section__title" id="photographer-title">Szia, Roland vagyok, én készítem majd a portréidat.</h2>
                 </div>
                 <p>Üzleti portrékat és headshotokat készítek Budapesten. Sok ügyfelemnek LinkedInre vagy az önéletrajzába kell új kép, de nem szeret kamera elé állni, ezért régóta halogatja az egészet.</p>
                 <p>Amikor megérkezel a stúdióba, először csak beszélgetünk. Lesz időd megszokni a helyzetet és feloldódni, mielőtt belevágunk.</p>
                 <p>Végig segítek a beállításokban, és menet közben rendszeresen megmutatom az elkészült képeket. Elmondhatod, mi tetszik, és ha valamin változtatnál, ott helyben kipróbáljuk.</p>
             </div>
-            <figure class="photographer-work"><img src="/assets/images/about.webp" alt="Így dolgozom a stúdióban egy portréfotózáson" width="600" height="600" loading="lazy" decoding="async"><figcaption>Közösen megnézzük, melyik beállítás működik a legjobban.</figcaption></figure>
+            <figure class="photographer-work"><img src="{{ '/assets/images/about.webp' | assetUrl }}" alt="Így dolgozom a stúdióban egy portréfotózáson" width="600" height="600" loading="lazy" decoding="async"><figcaption>Közösen megnézzük, melyik beállítás működik a legjobban.</figcaption></figure>
         </div>
     </section>
     <section class="section reviews-section" aria-labelledby="reviews-title">
         <div class="container">
             <h2 class="section__title" id="reviews-title">Ők is izgultak a fotózás előtt</h2>
             <div class="quotes quotes--selected"><blockquote class="quote card">
-					<img class="quote__photo" src="/assets/images/quote-marcsi.webp" alt="Marcsi" width="200" height="300" loading="lazy" decoding="async">
+					<img class="quote__photo" src="{{ '/assets/images/quote-marcsi.webp' | assetUrl }}" alt="Marcsi" width="200" height="300" loading="lazy" decoding="async">
 					<article class="quote__content">
 						<p class="quote__text">Olyan képet készített rólam, amit életemben először nem takargattam, hanem büszkén mutogattam.</p>
 						<cite class="quote__author">Marcsi, Omerta Digital</cite>
 					</article>
 				</blockquote>
 <blockquote class="quote card">
-					<img class="quote__photo" src="/assets/images/quote-bence.webp" alt="Bence" width="200" height="300" loading="lazy" decoding="async">
+					<img class="quote__photo" src="{{ '/assets/images/quote-bence.webp' | assetUrl }}" alt="Bence" width="200" height="300" loading="lazy" decoding="async">
 					<article class="quote__content">
 						<p class="quote__text">Tipikusan nem vagyok nagy rajongója ha fotóznak, de Roland ezt megváltoztatta. Nagyon közvetlen, már-már inkább baráti találkozásnak éreztem a fotózást.</p>
 						<cite class="quote__author">Bence</cite>
 					</article>
 				</blockquote>
 <blockquote class="quote card">
-					<img class="quote__photo" src="/assets/images/quote-boroka.webp" alt="Boróka" width="200" height="300" loading="lazy" decoding="async">
+					<img class="quote__photo" src="{{ '/assets/images/quote-boroka.webp' | assetUrl }}" alt="Boróka" width="200" height="300" loading="lazy" decoding="async">
 					<article class="quote__content">
 						<p class="quote__text">Nem igazán szoktam fotóztatni magam, és nem gondolom, hogy fotogén lennék… ahhoz képest, hogy nem hittem, hogy sikerül rólam jó képet készíteni, egészen pozitívan csalódtam.</p>
 						<cite class="quote__author">Boróka</cite>
@@ -302,10 +302,10 @@ title: Üzleti Portré
                 <div class="faq__content">
                     <p>Céges portréfotózást is vállalok az irodátokban vagy külső helyszínen. Többfős fotózásra egyedi ajánlatot adok.</p>
                     <figure class="clients card card--soft">
-                        <img class="clients__logo" src="/assets/images/client-marriott.webp" alt="Marriott Hotels International" width="300" height="250" loading="lazy" decoding="async">
-                        <img class="clients__logo" src="/assets/images/client-straumann.webp" alt="Straumann" width="300" height="250" loading="lazy" decoding="async">
-                        <img class="clients__logo" src="/assets/images/client-t&h-consulting.webp" alt="T&H Consulting" width="300" height="250" loading="lazy" decoding="async">
-                        <img class="clients__logo" src="/assets/images/client-jumpcut.webp" alt="JumpCut Productions" width="300" height="250" loading="lazy" decoding="async">
+                        <img class="clients__logo" src="{{ '/assets/images/client-marriott.webp' | assetUrl }}" alt="Marriott Hotels International" width="300" height="250" loading="lazy" decoding="async">
+                        <img class="clients__logo" src="{{ '/assets/images/client-straumann.webp' | assetUrl }}" alt="Straumann" width="300" height="250" loading="lazy" decoding="async">
+                        <img class="clients__logo" src="{{ '/assets/images/client-t&h-consulting.webp' | assetUrl }}" alt="T&H Consulting" width="300" height="250" loading="lazy" decoding="async">
+                        <img class="clients__logo" src="{{ '/assets/images/client-jumpcut.webp' | assetUrl }}" alt="JumpCut Productions" width="300" height="250" loading="lazy" decoding="async">
                         <figcaption class="clients__caption">Céges ügyfeleim közül</figcaption>
                     </figure>
                     <a class="company-enquiry-link" href="mailto:hi@rolandszabo.photo?subject=C%C3%A9ges%20portr%C3%A9fot%C3%B3z%C3%A1s">Céges ajánlatot kérek e-mailben</a>

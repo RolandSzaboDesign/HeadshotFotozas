@@ -1,6 +1,6 @@
-<dialog id="adatkezeles" class="modal">
+<dialog id="adatkezeles" class="modal" aria-labelledby="privacy-title">
 	<div class="modal__content">
-		<h2 class="modal__title">Adatkezelés</h2>
+		<h2 class="modal__title" id="privacy-title">Adatkezelés</h2>
 
 		<h3>1. Az adatkezelő adatai</h3>
 		<ul class="list">
@@ -61,5 +61,5 @@
 			<li><strong>Weboldal:</strong> www.naih.hu</li>
 		</ul>
 	</div>
-	<button class="modal__close js-prevent-default" onclick="closeModal()" title="Bezárás" aria-label="Bezárás"><i class="fas fa-xmark"></i></button>
+	<button class="modal__close js-modal-close" title="Bezárás" aria-label="Bezárás"><i class="fas fa-xmark"></i></button>
 </dialog>

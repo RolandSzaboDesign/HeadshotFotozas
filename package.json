@@ -7,6 +7,6 @@
   },
   "scripts": {
     "build": "eleventy",
-    "test": "node --test tests/measurement.test.cjs"
+    "test": "npm run build && node --test tests/*.test.cjs"
   }
 }
