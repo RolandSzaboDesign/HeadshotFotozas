@@ -12,6 +12,7 @@
 	};
 	const banner = document.getElementById('measurement-consent');
 	const settings = document.getElementById('measurement-settings');
+	let consentReturnFocus = null;
 	let saved = storage.get('localStorage', CONSENT_KEY);
 	let choice = saved && Date.now() - saved.at < 180 * DAY && ['granted', 'denied'].includes(saved.choice) ? saved.choice : null;
 	let loading = false;
@@ -67,8 +68,9 @@
 	if (banner) banner.hidden = choice !== null;
 	settings?.addEventListener('click', () => {
 		if (!banner) return;
+		consentReturnFocus = document.activeElement;
 		banner.hidden = false;
-		banner.querySelector('[data-consent="denied"]')?.focus();
+		banner.querySelector('[data-consent="denied"]')?.focus({ preventScroll: true });
 	});
 	document.querySelector('[data-consent-privacy]')?.addEventListener('click', () => {
 		if (typeof window.openModal === 'function') window.openModal();
@@ -77,7 +79,8 @@
 		choice = button.dataset.consent;
 		storage.set('localStorage', CONSENT_KEY, { choice, at: Date.now() });
 		if (banner) banner.hidden = true;
-		settings?.focus();
+		consentReturnFocus?.focus({ preventScroll: true });
+		consentReturnFocus = null;
 		if (choice === 'granted') {
 			loadGoogleTag();
 			sendConfirmedLead();

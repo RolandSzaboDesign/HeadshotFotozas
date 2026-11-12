@@ -946,9 +946,7 @@ SECTIONS
 }
 
 .hero__lead {
-	max-width: 64rem;
-	color: var(--text);
-	text-wrap: balance;
+    color: var(--text);
 }
 
 .hero__visual {
@@ -1034,9 +1032,6 @@ SECTIONS
 	object-position: center 10%;
 }
 
-.hero__lead-line {
-	display: inline;
-}
 
 @media only screen and (min-width: 576px) {
 	.hero__grid {
@@ -1047,9 +1042,6 @@ SECTIONS
 		width: min(82%, 42rem);
 	}
 
-	.hero__lead-line {
-		display: block;
-	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -1080,23 +1072,19 @@ SECTIONS
 }
 
 .eyebrow {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	gap: .8rem;
-	margin-bottom: 2rem;
-	padding: .8rem 1.4rem;
-	font-size: 1.3rem;
-	font-weight: 700;
-	line-height: 1.2;
-	color: var(--primary);
-	text-transform: uppercase;
-	letter-spacing: .08em;
-	border: 1px solid var(--border-blue);
-	border-radius: var(--radius-sm);
-	background: var(--surface-toggle);
-	box-shadow: var(--shadow-xs);
-	backdrop-filter: blur(14px);
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 0 .8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border: 0;
+    border-bottom: 1px solid var(--border-blue);
 }
 
 .title {

@@ -27,7 +27,7 @@ function unlockBodyScroll() {
 
 // Modal
 const modal = document.querySelector('.modal');
-const openModalBtn = document.querySelector('.js-modal-open');
+const openModalBtns = document.querySelectorAll('.js-modal-open');
 const closeModalBtn = document.querySelector('.js-modal-close');
 const modalOverlay = modal?.querySelector('.modal__overlay');
 
@@ -43,7 +43,10 @@ function closeModal() {
 	unlockBodyScroll();
 }
 
-openModalBtn?.addEventListener('click', openModal);
+openModalBtns.forEach(button => button.addEventListener('click', event => {
+	event.preventDefault();
+	openModal();
+}));
 closeModalBtn?.addEventListener('click', closeModal);
 modalOverlay?.addEventListener('click', closeModal);
 

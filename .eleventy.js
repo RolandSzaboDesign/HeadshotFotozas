@@ -26,8 +26,8 @@ module.exports = function (eleventyConfig) {
 		let metadata = await Image(src, {
 			widths: [320, 480, 800],
 			formats: ["webp"],
-			urlPath: "/assets/images/gallery/generated/",
-			outputDir: "./public/assets/images/gallery/generated/",
+			urlPath: "/assets/images/gallery/optimized/",
+			outputDir: "./public/assets/images/gallery/optimized/",
 			filenameFormat: function(id, src, width, format) {
 				const { name } = path.parse(src);
 				return `${name}-${width}.${format}`;
@@ -74,8 +74,8 @@ module.exports = function (eleventyConfig) {
 		let metadata = await Image(src, {
 			widths: [400, 600, 800],
 			formats: ["webp"],
-			urlPath: "/assets/images/generated/examples/",
-			outputDir: "./public/assets/images/generated/examples/",
+			urlPath: "/assets/images/optimized/examples/",
+			outputDir: "./public/assets/images/optimized/examples/",
 			filenameFormat: function(id, src, width, format) {
 				const { name } = path.parse(src);
 				return `${name}-${width}.${format}`;

@@ -2,11 +2,10 @@
 layout: base.html
 title: Üzleti Portré
 ---
-
 <link rel="preload" as="image" href="/assets/images/hero.webp" fetchpriority="high">
-
+<link rel="stylesheet" href="/assets/css/hero-print.css">
 <main>
-	<section class="section hero">
+	<section class="section hero hero--print">
 		<header class="container hero__grid">
 			<div class="hero__content">
 				<p class="eyebrow">Üzleti portré fotózás Budapesten</p>
@@ -15,259 +14,181 @@ title: Üzleti Portré
 					<span class="title__span">azoknak, akik nem szeretnek fotózkodni.</span>
 				</h1>
 				<p class="hero__lead">
-					A profilképed sokszor hamarabb mutatkozik be helyetted.
-					<span class="hero__lead-line">Legyen végre egy olyan, amit szeretsz is használni.</span>
+					Üzleti portréfotózás Budapesten, LinkedIn-profilképhez, önéletrajzhoz és a weboldaladra.
+					Legyen végre olyan portréd, amit szívesen használsz.
 				</p>
 				<div class="btn-container">
-					<a class="btn" href="#kapcsolat">Szeretnék egy jó portrét</a>
+					<a class="btn" href="#portrek">Megnézem a részleteket</a>
 					<a class="cta-note" href="https://www.google.com/maps/place/Szab%C3%B3+Roland+%E2%80%A2+Portr%C3%A9+%C3%A9s+Aut%C3%B3+Fot%C3%B3z%C3%A1s/@47.4782699,19.0495662,17z/data=!4m8!3m7!1s0x8c17d069502b393b:0x36d12b762284bed!8m2!3d47.4782699!4d19.0495662!9m1!1b1!16s%2Fg%2F11l6x8pq4r?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">⭐ 100+ ötcsillagos Google értékelés</a>
 				</div>
 			</div>
 			<figure class="hero__visual">
+				<svg class="hero-print-clip hero-print-clip--back" viewBox="0 0 44 104" aria-hidden="true" focusable="false"><path d="M5 17V76C5 100 39 100 39 76V30" /></svg>
 				<div class="hero__image-card">
 					<img class="hero__image" src="/assets/images/hero.webp" alt="Headshot portré világos stúdióháttér előtt" width="1000" height="1500" loading="eager" decoding="async" fetchpriority="high">
 				</div>
+				<svg class="hero-print-clip hero-print-clip--front" viewBox="0 0 44 104" aria-hidden="true" focusable="false"><path d="M14 31V73C14 86 30 86 30 73V17C30-1 5-1 5 17" /></svg>
 			</figure>
 		</header>
 
-		<div class="container about">
-			<details class="about__grid">
-				<summary class="about__summary">
-					<img class="about__image" src="/assets/images/roland.webp" alt="Szia, Roland vagyok, én leszek a fotósod. 🤗" title="Szia, Roland vagyok, én leszek a fotósod. 🤗" width="100" height="100">
-					<h2 class="about__title h4">Szia, Roland vagyok. Én leszek a fotósod.</h2>
-					<p class="about__text">Ha szeretnéd tudni, ki fog instruálni a kamera mögül, itt röviden bemutatkozom. <span class="sr-only">A bemutatkozó szöveg lenyitásához.</span></p>
-				</summary>
-				<div class="about__content">
-					<article class="about__body">
-						<p>Azért fotózok headshotokat, mert sok embernek szüksége van egy jó portréra, mégis évekig halogatja. Ismerős helyzet: kellene egy normális kép LinkedInre, önéletrajzba vagy weboldalra, aztán valahogy mindig marad a régi profilkép.</p>
-						<p>Közben pontosan tudom, milyen furcsa érzés a kamera előtt állni. A legtöbben nem azért feszengenek, mert gond lenne velük. Egyszerűen senki nem mondta még el nekik, mit csináljanak a kezükkel, merre nézzenek, hogyan tartsák magukat.</p>
-						<p>A fotózáson végig ebben segítek. Nem kell előre tudnod pózolni, és nem kell magabiztosan megérkezned. Elég, ha eljössz, a többit lépésről lépésre összerakjuk.</p>
-					</article>
-					<img class="about__content-image" src="/assets/images/about.webp" alt="Levente fantasztikus headshotjai készülnek a színfalak mögött" width="600" height="600" loading="lazy" decoding="async">
-				</div>
-			</details>
-		</div>
-	</section>
+    </section>
 
-	<section class="section">
-		<div class="container">
-			<h2 class="section__title">Olyan fotót kapsz, amit tényleg használni fogsz</h2>
-			<p>A jó headshot nem igazolványkép és nem túlextrázott modellfotó. Egy üzleti portré célja az, hogy felismerhető legyél, jól nézz ki, és közben szakmai helyzetben is működjön.</p>
-			<p>Használhatod például:</p>
-			<div class="examples">
-				<figure class="example card">
-					{% exampleImage "./src/assets/images/example-linkedin.webp", "Headshot portré LinkedIn profilképként megjelenítve" %}
-					<figcaption class="example__caption">LinkedInen</figcaption>
-				</figure>
-				<figure class="example card">
-					{% exampleImage "./src/assets/images/example-email.webp", "Headshot portré Email aláírásban elhelyezve" %}
-					<figcaption class="example__caption">Email aláírásban</figcaption>
-				</figure>
-				<figure class="example card">
-					{% exampleImage "./src/assets/images/example-website.webp", "Headshot portré Weboldal rólam oldalán" %}
-					<figcaption class="example__caption">Saját vagy céges weboldalon</figcaption>
-				</figure>
-				<figure class="example card">
-					{% exampleImage "./src/assets/images/example-cv.webp", "Headshot portré önéletrajzban" %}
-					<figcaption class="example__caption">Önéletrajzban</figcaption>
-				</figure>
-			</div>
-			<p>Ha most egy régi, kivágott vagy kényszerből használt profilképed van, ideje lecserélni valami vállalhatóra.</p>
-			<div class="btn-container">
-				<a class="btn" href="#kapcsolat">Pont erre van szükségem</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="section">
-		<div class="container">
-			<h2 class="section__title">Így zajlik a headshot fotózás</h2>
-			<ol class="process">
-				<li class="step card card--blue-soft">
-					<h3 class="step__title h4">Időpontot egyeztetünk</h3>
-					<p class="step__text">Megbeszéljük, mire szeretnéd használni a portrét, és keresünk egy időpontot, ami neked és a stúdiónak is kényelmes.</p>
-				</li>
-				<li class="step card card--blue-soft">
-					<h3 class="step__title h4">Találkozunk a budapesti stúdióban</h3>
-					<p class="step__text">A Studio Differentben fotózunk, Budapest VIII. kerületében, a Baross utca 75. alatt. Az egyórás stúdióbérlést a csomag ára tartalmazza.</p>
-				</li>
-				<li class="step card card--blue-soft">
-					<h3 class="step__title h4">Végig segítek a fotózáson</h3>
-					<p class="step__text">Nem kell tudnod, hogyan állj vagy merre nézz. Végig instruállak, megmutatom, min érdemes változtatni, és közben ránézünk a képekre is, hogy lásd, jó irányba haladunk.</p>
-				</li>
-				<li class="step card card--blue-soft">
-					<h3 class="step__title h4">Otthon kiválasztod a kedvenceidet</h3>
-					<p class="step__text">A válogatható képeket a fotózástól számított 24 órán belül, többnyire már aznap elküldöm. Otthon, saját tempóban választhatsz legfeljebb 10 kedvencet retusálásra. Ha ennél több képet szeretnél, a további retusált portrék árát előre egyeztetjük.</p>
-				</li>
-				<li class="step card card--blue-soft">
-					<h3 class="step__title h4">Megkapod a retusált portrékat</h3>
-					<p class="step__text">A fotózás díját a képválasztás után, a végleges képek átadása előtt rendezed. A kiválasztott portrékat természetes, ízléses retussal készítem el, és digitálisan, Google Drive mappában adom át. A végleges képeket a képválasztás és a fizetés beérkezése után 24 órán belül megkapod. A határidő akkor indul, amikor mindkettő megtörtént.</p>
-				</li>
-			</ol>
-			<a class="btn mt-3" href="#kapcsolat">Egyeztessünk időpontot</a>
-		</div>
-	</section>
-
-	<section class="section">
-		<div class="container">
-			<h2 class="section__title">Így néz ki, amikor valaki jól érzi magát a kamera előtt</h2>
-			<div class="gallery">
-				{% image "./src/assets/images/gallery/01.webp", "Mosolygó férfi üzleti headshot kék pulóverben szürke háttér előtt" %}
-				{% image "./src/assets/images/gallery/02.webp", "Barátságos férfi üzleti portré összefont karral stúdióban" %}
-				{% image "./src/assets/images/gallery/03.webp", "Természetes női headshot hosszú hajjal világosszürke háttér előtt" %}
-				{% image "./src/assets/images/gallery/04.webp", "Elegáns férfi üzleti portré zöld ingben stúdiófotózáson" %}
-				{% image "./src/assets/images/gallery/05.webp", "Mosolygó női portré élénk pink ruhában üzleti fotózáson" %}
-				{% image "./src/assets/images/gallery/06.webp", "Professzionális női headshot szemüvegben és csíkos ingben" %}
-				{% image "./src/assets/images/gallery/07.webp", "Fiatal férfi üzleti portré zakóban és fehér ingben" %}
-				{% image "./src/assets/images/gallery/08.webp", "Mosolygó nő portréfotózáson mikrofonnal a kezében" %}
-				{% image "./src/assets/images/gallery/09.webp", "Vidám férfi headshot szemüvegben világos háttér előtt" %}
-				{% image "./src/assets/images/gallery/10.webp", "Középkorú férfi fehér ingben, határozott mosollyal, stúdiós headshot fotózáson" %}
-				{% image "./src/assets/images/gallery/11.webp", "Elegáns férfi üzleti portré öltönyben és nyakkendőben" %}
-				{% image "./src/assets/images/gallery/12.webp", "Női portré fekete zakóban sárga virágcsokorral" %}
-				{% image "./src/assets/images/gallery/13.webp", "Fiatal férfi headshot fehér ingben sötét háttér előtt" %}
-				{% image "./src/assets/images/gallery/14.webp", "Professzionális női üzleti portré vörös hajjal stúdióban" %}
-				{% image "./src/assets/images/gallery/15.webp", "Férfi portré mikrofonnal természetes stúdióvilágításban" %}
-				{% image "./src/assets/images/gallery/16.webp", "Férfi headshot fehér ingben zakóval a vállán" %}
-				{% image "./src/assets/images/gallery/17.webp", "Fiatal férfi üzleti portré sötét ingben" %}
-				{% image "./src/assets/images/gallery/18.webp", "Mosolygó női headshot világos ruhában stúdiófotózáson" %}
-				{% image "./src/assets/images/gallery/19.webp", "Férfi üzleti portré sötétkék zakóban és fehér ingben" %}
-				{% image "./src/assets/images/gallery/20.webp", "Professzionális női headshot fekete zakóban világos háttér előtt" %}
-				{% image "./src/assets/images/gallery/21.webp", "Mosolygó női üzleti portré fekete garbóban világosszürke háttér előtt" %}
-				{% image "./src/assets/images/gallery/22.webp", "Elegáns férfi headshot kék öltönyben és nyakkendőben" %}
-				{% image "./src/assets/images/gallery/23.webp", "Mosolygó női portré bézs hidzsábban stúdiófotózáson" %}
-				{% image "./src/assets/images/gallery/24.webp", "Férfi üzleti portré fehér ingben természetes mosollyal" %}
-			</div>
-			<div class="btn-container">
-				<a class="btn" href="#kapcsolat">Én is ilyen képeket szeretnék</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="section">
-		<div class="container">
-			<h2 class="section__title">Nem csak Te tartasz a kamera előtt állástól</h2>
-			<p>A legtöbb értékelésemben ugyanaz tér vissza: az emberek izgulva érkeznek, aztán pár perc után már sokkal könnyebb az egész.</p>
-			<div class="quotes">
-				<blockquote class="quote card">
-					<img class="quote__photo" src="/assets/images/quote-ryan.webp" alt="Ryan, Marriott Hotels Intl." width="200" height="300" loading="lazy" decoding="async">
-					<article class="quote__content">
-						<p class="quote__text">Roland mindenkit megnyugtatott, ami hatalmas különbséget jelentett, és a végső fotókon is látszik. A hozzáállása valóban élvezetessé tette a fotózást a csapat számára.</p>
-						<cite class="quote__author">Ryan, Marriott Hotels Intl.</cite>
-					</article>
-				</blockquote>
-				<blockquote class="quote card">
+    <section class="section portfolio-section" id="portrek" aria-labelledby="portfolio-title">
+        <div class="container">
+            <h2 class="section__title" id="portfolio-title">Üzleti portrék a fotózásaimról</h2>
+            <p class="section-intro">Egy új LinkedIn-profilképhez, önéletrajzhoz vagy a saját weboldaladra is találunk hozzád illő beállítást. Lehet mosolygós vagy komolyabb, ingben, zakóban vagy kötetlenebb ruhában.</p>
+            <div class="gallery gallery--featured">
+{% image "./src/assets/images/gallery/22.webp", "Mosolygó férfi üzleti portré kék öltönyben és nyakkendőben" "(min-width: 1400px) 440px, (min-width: 768px) calc((100vw - 8rem) / 3), calc((100vw - 3rem) / 2)" %}
+{% image "./src/assets/images/gallery/04.webp", "Mosolygó női headshot szemüvegben, rózsaszín csíkos ingben" "(min-width: 1400px) 440px, (min-width: 768px) calc((100vw - 8rem) / 3), calc((100vw - 3rem) / 2)" %}
+{% image "./src/assets/images/gallery/07.webp", "Mosolygó férfi headshot szemüvegben, világos pulóverben" "(min-width: 1400px) 440px, (min-width: 768px) calc((100vw - 8rem) / 3), calc((100vw - 3rem) / 2)" %}
+{% image "./src/assets/images/gallery/18.webp", "Női üzleti portré fekete kosztümben és fehér ingben" "(min-width: 1400px) 440px, (min-width: 768px) calc((100vw - 8rem) / 3), calc((100vw - 3rem) / 2)" %}
+{% image "./src/assets/images/gallery/10.webp", "Férfi portré fehér ingben, összefont karral, sötétszürke háttér előtt" "(min-width: 1400px) 440px, (min-width: 768px) calc((100vw - 8rem) / 3), calc((100vw - 3rem) / 2)" %}
+{% image "./src/assets/images/gallery/12.webp", "Vörös hajú nő üzleti portréja kék zakóban és fekete felsőben" "(min-width: 1400px) 440px, (min-width: 768px) calc((100vw - 8rem) / 3), calc((100vw - 3rem) / 2)" %}
+            </div>
+            <details class="portfolio-more">
+                <summary>További portrék megtekintése</summary>
+                <div class="gallery gallery--more">
+{% image "./src/assets/images/gallery/01.webp", "Női üzleti portré fekete felsőben, világosszürke stúdióháttérrel" %}
+{% image "./src/assets/images/gallery/02.webp", "Barátságos férfi üzleti portré összefont karral stúdióban" %}
+{% image "./src/assets/images/gallery/03.webp", "Mosolygós női portré piros ruhában, világos háttér előtt" %}
+{% image "./src/assets/images/gallery/05.webp", "Mosolygó női portré élénk pink ruhában üzleti fotózáson" %}
+{% image "./src/assets/images/gallery/06.webp", "Mosolygós előadói portré mikrofonnal, mintás felsőben" %}
+{% image "./src/assets/images/gallery/08.webp", "Mosolygó nő portréfotózáson mikrofonnal a kezében" %}
+{% image "./src/assets/images/gallery/09.webp", "Vidám férfi headshot szemüvegben világos háttér előtt" %}
+{% image "./src/assets/images/gallery/11.webp", "Elegáns férfi üzleti portré öltönyben és nyakkendőben" %}
+{% image "./src/assets/images/gallery/13.webp", "Fiatal férfi headshot fehér ingben sötét háttér előtt" %}
+{% image "./src/assets/images/gallery/14.webp", "Férfi üzleti portré fehér ingben, zakóval a vállán" %}
+{% image "./src/assets/images/gallery/15.webp", "Férfi portré mikrofonnal természetes stúdióvilágításban" %}
+{% image "./src/assets/images/gallery/16.webp", "Férfi headshot fehér ingben zakóval a vállán" %}
+{% image "./src/assets/images/gallery/17.webp", "Fiatal férfi üzleti portré sötét ingben" %}
+{% image "./src/assets/images/gallery/19.webp", "Férfi üzleti portré sötétkék zakóban és fehér ingben" %}
+{% image "./src/assets/images/gallery/20.webp", "Professzionális női headshot fekete zakóban világos háttér előtt" %}
+{% image "./src/assets/images/gallery/21.webp", "Mosolygó női üzleti portré fekete garbóban világosszürke háttér előtt" %}
+{% image "./src/assets/images/gallery/23.webp", "Mosolygós női portré bézs hidzsábban, stúdióban" %}
+{% image "./src/assets/images/gallery/24.webp", "Férfi üzleti portré fehér ingben természetes mosollyal" %}
+                </div>
+            </details>
+        </div>
+    </section>
+    <section class="section photographer-section" aria-labelledby="photographer-title">
+        <div class="container photographer-grid">
+            <div class="photographer-copy">
+                <div class="photographer-heading">
+                    <img src="/assets/images/roland.webp" alt="Szabó Roland portréfotós" width="100" height="100" loading="lazy" decoding="async">
+                    <h2 class="section__title" id="photographer-title">Szia, Roland vagyok, én készítem majd a portréidat.</h2>
+                </div>
+                <p>Üzleti portrékat és headshotokat készítek Budapesten. Sok ügyfelemnek LinkedInre vagy az önéletrajzába kell új kép, de nem szeret kamera elé állni, ezért régóta halogatja az egészet.</p>
+                <p>Amikor megérkezel a stúdióba, először csak beszélgetünk. Lesz időd megszokni a helyzetet és feloldódni, mielőtt belevágunk.</p>
+                <p>Végig segítek a beállításokban, és menet közben rendszeresen megmutatom az elkészült képeket. Elmondhatod, mi tetszik, és ha valamin változtatnál, ott helyben kipróbáljuk.</p>
+            </div>
+            <figure class="photographer-work"><img src="/assets/images/about.webp" alt="Így dolgozom a stúdióban egy portréfotózáson" width="600" height="600" loading="lazy" decoding="async"><figcaption>Közösen megnézzük, melyik beállítás működik a legjobban.</figcaption></figure>
+        </div>
+    </section>
+    <section class="section reviews-section" aria-labelledby="reviews-title">
+        <div class="container">
+            <h2 class="section__title" id="reviews-title">Ők is izgultak a fotózás előtt</h2>
+            <div class="quotes quotes--selected"><blockquote class="quote card">
 					<img class="quote__photo" src="/assets/images/quote-marcsi.webp" alt="Marcsi" width="200" height="300" loading="lazy" decoding="async">
 					<article class="quote__content">
 						<p class="quote__text">Olyan képet készített rólam, amit életemben először nem takargattam, hanem büszkén mutogattam.</p>
 						<cite class="quote__author">Marcsi, Omerta Digital</cite>
 					</article>
 				</blockquote>
-				<blockquote class="quote card">
-					<img class="quote__photo" src="/assets/images/quote-jazmin.webp" alt="Jázmin" width="200" height="300" loading="lazy" decoding="async">
-					<article class="quote__content">
-						<p class="quote__text">Nem éreztem frusztrálva magamat, még ha nem is tudtam mit csináljak a kamera előtt, Roland mondta hogy pózoljak.</p>
-						<cite class="quote__author">Jázmin</cite>
-					</article>
-				</blockquote>
-				<blockquote class="quote card">
+<blockquote class="quote card">
 					<img class="quote__photo" src="/assets/images/quote-bence.webp" alt="Bence" width="200" height="300" loading="lazy" decoding="async">
 					<article class="quote__content">
 						<p class="quote__text">Tipikusan nem vagyok nagy rajongója ha fotóznak, de Roland ezt megváltoztatta. Nagyon közvetlen, már-már inkább baráti találkozásnak éreztem a fotózást.</p>
 						<cite class="quote__author">Bence</cite>
 					</article>
 				</blockquote>
-				<blockquote class="quote card">
-					<img class="quote__photo" src="/assets/images/quote-laci.webp" alt="Laci" width="200" height="300" loading="lazy" decoding="async">
-					<article class="quote__content">
-						<p class="quote__text">Szerencsére Roland nagyon jól navigált a beállásokban, és sokat segített ahogyan elmagyarázta mit miért kell csinálni.</p>
-						<cite class="quote__author">Laci</cite>
-					</article>
-				</blockquote>
-				<blockquote class="quote card">
+<blockquote class="quote card">
 					<img class="quote__photo" src="/assets/images/quote-boroka.webp" alt="Boróka" width="200" height="300" loading="lazy" decoding="async">
 					<article class="quote__content">
 						<p class="quote__text">Nem igazán szoktam fotóztatni magam, és nem gondolom, hogy fotogén lennék… ahhoz képest, hogy nem hittem, hogy sikerül rólam jó képet készíteni, egészen pozitívan csalódtam.</p>
 						<cite class="quote__author">Boróka</cite>
 					</article>
-				</blockquote>
-			</div>
-			<p>100+ Google értékelés alapján a legtöbben nemcsak a képeket emelik ki, hanem azt is, hogy a fotózás végül sokkal könnyebb volt, mint hitték.</p>
-			<div class="btn-container">
-				<a class="btn" href="#kapcsolat">Próbáljuk ki</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="section pricing">
+				</blockquote></div>
+            <a class="review-source" href="https://www.google.com/maps/place/Szab%C3%B3+Roland+%E2%80%A2+Portr%C3%A9+%C3%A9s+Aut%C3%B3+Fot%C3%B3z%C3%A1s/@47.4782699,19.0495662,17z/data=!4m8!3m7!1s0x8c17d069502b393b:0x36d12b762284bed!8m2!3d47.4782699!4d19.0495662!9m1!1b1!16s%2Fg%2F11l6x8pq4r?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">100+ Google értékelés — olvasd el a visszajelzéseket</a>
+        </div>
+    </section>
+<section class="section pricing" id="csomag" aria-labelledby="package-title">
+        <div class="container package-container">
+            <p class="eyebrow">Egyéni üzleti portréfotózás</p>
+            <h2 class="section__title" id="package-title">Mit kapsz a fotózással, és mennyibe kerül?</h2>
+            <div class="pricing__card package-offer card card--strong">
+                <div class="package-offer__details">
+                    <h3 class="h4">Egy óra a stúdióban, többféle portré rólad</h3>
+                    <ul class="package-inclusions">
+                        <li><strong>Végig segítek a fotózáson.</strong> Több beállást és arckifejezést próbálunk ki, 1–2 átöltözés is belefér.</li>
+                        <li><strong>A stúdióbérlés is benne van.</strong> A Studio Differentben fotózunk, Budapest VIII. kerületében, a Baross utca 75. alatt.</li>
+                        <li><strong>Legfeljebb 10 retusált portrét választhatsz.</strong> Otthon, saját tempóban dönthetsz a kedvenceidről; a retus természetes marad.</li>
+                        <li><strong>A kész képeket digitálisan kapod meg.</strong> A választásod után 24 órán belül elküldöm a retusált portrékat egy Google Drive-mappában.</li>
+                    </ul>
+                </div>
+                <div class="pricing__card-content package-offer__price">
+                    <p class="uppercase mb-0"><strong>A csomag teljes ára:</strong></p>
+                    <p class="price h1 mb-1">45 000 Ft</p>
+                    <p class="package-offer__price-note">Fotózással, stúdióbérléssel és retusálással együtt.</p>
+                    <p class="payment-note">Előleget jelenleg nem kérek. A teljes díjat a fotózás után, a válogatóképek elküldése előtt rendezed. A díj rendezése után 24 órán belül elküldöm a válogatóképeket.</p>
+                    <a class="btn" href="#kapcsolat">Visszahívást kérek</a>
+                    <p class="cta-note">A visszahíváskérés még nem jelent foglalást.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="section contact" id="kapcsolat">
 		<div class="container">
-			<div class="benefits">
-				<article class="benefits__content">
-					<h2 class="section__title">Mit kapsz a headshot fotózással?</h2>
-					<ol class="benefits__list">
-						<li class="benefits__item">
-							<h3 class="benefits__title h4">Nyugodt, végig vezetett fotózás</h3>
-							<ul class="benefits__sublist list">
-								<li class="benefits__subitem">Végig instruállak, így nem neked kell kitalálnod, mit csinálj a kamera előtt</li>
-								<li class="benefits__subitem">Rugalmas időpontválasztás a stúdió szabad időpontjaihoz igazodva</li>
-							</ul>
+			<h2 class="section__title">Egyeztessünk a portréfotózásodról</h2>
+			<p>Átbeszéljük, milyen képekre van szükséged, válaszolok a kérdéseidre, és keresünk egy megfelelő időpontot.</p>
+			<div class="contact__grid">
+				<form class="form" name="kapcsolat" method="POST" action="/koszonom" netlify netlify-honeypot="very-special-field">
+					<div class="form__content">
+						<input type="hidden" name="form-name" value="kapcsolat">
+						<h3 class="form__title mt-0">Visszahívást kérek</h3>
+						<p class="form__intro">Általában 1–2 órán belül visszahívlak; ha épp szabad vagyok, akár azonnal.</p>
+						<div class="form__group">
+							<label class="form__label" for="nev">Neved <span class="form__asterisk">*</span></label>
+							<input class="form__input" type="text" id="nev" name="nev" autocomplete="name" required>
+						</div>
+						<div class="form__group">
+							<label class="form__label" for="telefon">Telefonszámod <span class="form__asterisk">*</span></label>
+							<input class="form__input" type="tel" id="telefon" name="telefon" autocomplete="tel" inputmode="tel" required>
+						</div>
+						<div class="form__group hidden">
+							<label class="form__label" for="very-special-field">Ezt ne töltsd ki :)</label>
+							<input class="form__input" type="text" id="very-special-field" name="very-special-field">
+						</div>
+						<button class="form__button btn btn--full" type="submit">Visszahívást kérek</button>
+                        <p class="form-status" role="status" aria-live="polite" hidden></p>
+						<p class="form__disclaimer mb-0"><small>A visszahíváskérés még nem jelent foglalást. Az adataidat csak a kapcsolatfelvételhez használom. <a class="js-modal-open" href="#adatkezeles" aria-haspopup="dialog" aria-controls="adatkezeles">Adatkezelési tájékoztató</a></small></p>
+					</div>
+				</form>
+				<address class="contact__details">
+					<h3 class="h4">Vagy keress az alábbi elérhetőségeken:</h3>
+					<ul class="contact__list">
+						<li class="contact__item">
+							<p>
+								<strong>Emailben:</strong><br>
+								<a class="contact__link" href="mailto:hi@rolandszabo.photo">hi@rolandszabo.photo</a>
+							</p>
 						</li>
-						<li class="benefits__item">
-							<h3 class="benefits__title h4">1 óra stúdiós headshot fotózás</h3>
-							<ul class="benefits__sublist list">
-								<li class="benefits__subitem">Studio Different · Budapest VIII., Baross utca 75. · a stúdióbérlést az ár tartalmazza</li>
-								<li class="benefits__subitem">Kipróbálunk több beállást, arckifejezést és szöget, hogy megtaláljuk, mi működik nálad a legjobban</li>
-								<li class="benefits__subitem">Hozhatsz több outfitet is, 1-2 átöltözés kényelmesen belefér</li>
-							</ul>
+						<li class="contact__item">
+							<p>
+								<strong>Telefonon:</strong><br>
+								<a class="contact__link" href="tel:+36205914620">+36 20 591 4620</a>
+							</p>
 						</li>
-						<li class="benefits__item">
-							<h3 class="benefits__title h4">Legfeljebb 10 választott, természetesen retusált portré</h3>
-							<ul class="benefits__sublist list">
-								<li class="benefits__subitem">Te választod ki otthon, saját tempóban a kedvenc képeidet</li>
-								<li class="benefits__subitem">A retus természetes marad: frissebb, rendezettebb hatás, művi végeredmény nélkül</li>
-								<li class="benefits__subitem">Válogatható képek a fotózás után 24 órán belül; végleges portrék a képválasztás és a fizetés beérkezése után 24 órán belül</li>
-							</ul>
+						<li class="contact__item">
+							<p>
+								<strong>Instagram üzenetben:</strong><br>
+								<a class="contact__link" href="https://www.instagram.com/headshotfotozas.hu/" target="_blank" rel="noopener noreferrer">@headshotfotozas.hu</a>
+							</p>
 						</li>
-					</ol>
-				</article>
-				<figure class="pricing__portrait">
-					<img class="pricing__image" src="/assets/images/pricing.webp" alt="Mosolygó női üzleti headshot fekete felsőben, szürke stúdióháttér előtt" width="1000" height="1500" loading="lazy" decoding="async">
-				</figure>
-			</div>
-			<div class="pricing__card card card--strong">
-				<div class="pricing__card-content">
-					<p class="eyebrow">Headshot Fotózás Árak</p>
-					<h2 class="section__title">Stúdiós headshot fotózás Budapesten</h2>
-					<p class="uppercase mb-0"><strong>Az egyéni headshotcsomag teljes ára:</strong></p>
-					<p class="price h1 mb-1">45 000 Ft</p>
-					<p class="text-light">Az ár tartalmazza az egyórás fotózást és stúdióbérlést a Studio Differentben, valamint legfeljebb 10 általad választott, retusált portrét. A csomag ára akkor is 45 000 Ft, ha kevesebb képet választasz. További retusált képekről külön egyeztetünk.</p>
-					<a class="btn mt-2" href="#kapcsolat">Nézzünk időpontot!</a>
-					<a class="cta-note" href="https://www.google.com/maps/place/Szab%C3%B3+Roland+%E2%80%A2+Portr%C3%A9+%C3%A9s+Aut%C3%B3+Fot%C3%B3z%C3%A1s/@47.4782699,19.0495662,17z/data=!4m8!3m7!1s0x8c17d069502b393b:0x36d12b762284bed!8m2!3d47.4782699!4d19.0495662!9m1!1b1!16s%2Fg%2F11l6x8pq4r?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">⭐ 100+ ötcsillagos Google értékelés</a>
-				</div>
+					</ul>
+				</address>
 			</div>
 		</div>
 	</section>
-
-	<section class="section companies">
-		<div class="container companies__grid">
-			<article>
-				<h2 class="section__title">Céges headshot napok</h2>
-				<p>Ha a teljes csapatnak kell egységes, profi portré, megszervezem a fotózást az irodátokban vagy külső helyszínen.</p>
-				<p>Úgy dolgozom, hogy a kollégáknak minél kevesebb kiesést jelentsen, közben mindenki kapjon annyi segítséget, amennyitől természetes és vállalható lesz a végeredmény.</p>
-				<figure class="clients card card--soft">
-					<img class="clients__logo" src="/assets/images/client-marriott.webp" alt="Marriott Hotels International" width="300" height="250" loading="lazy" decoding="async">
-					<img class="clients__logo" src="/assets/images/client-straumann.webp" alt="Straumann" width="300" height="250" loading="lazy" decoding="async">
-					<img class="clients__logo" src="/assets/images/client-t&h-consulting.webp" alt="T&H Consulting" width="300" height="250" loading="lazy" decoding="async">
-					<img class="clients__logo" src="/assets/images/client-jumpcut.webp" alt="JumpCut Productions" width="300" height="250" loading="lazy" decoding="async">
-					<figcaption class="clients__caption">Elégedett céges ügyfeleim</figcaption>
-				</figure>
-				<a class="btn mt-3" href="#kapcsolat">Céges ajánlatot kérek</a>
-			</article>
-			<figure class="companies__mockup">
-				<img class="companies__image" src="/assets/images/example-company.webp" alt="Példa arra, hogyan néznek ki az alkalmazottak headshotjai egy céges weboldalon." width="800" height="600" loading="lazy" decoding="async">
-			</figure>
-		</div>
-	</section>
-
 	<section class="section">
 		<div class="container">
 			<h2 class="section__title">Maradt még kérdésed?</h2>
@@ -276,15 +197,15 @@ title: Üzleti Portré
 				<dl class="faq__content">
 					<div class="faq__topic">
 						<dt class="faq__question">Mit vegyek fel?</dt>
-						<dd class="faq__answer">Olyan ruhát hozz, amiben jól érzed magad, és ami illik ahhoz, ahol használni fogod a képet. Ha bizonytalan vagy, segítek választani. Több opciót is hozhatsz, az 1 órába általában 1-2 átöltözés is belefér.</dd>
+						<dd class="faq__answer">Olyan ruhát hozz, amiben jól érzed magad, és ami illik ahhoz, ahol használni fogod a képet. Több opciót is hozhatsz, az 1 órába általában 1-2 átöltözés is belefér.</dd>
 					</div>
 					<div class="faq__topic">
 						<dt class="faq__question">Kell smink vagy fodrász?</dt>
 						<dd class="faq__answer">A legtöbben saját maguk készülnek, és ez teljesen rendben működik. Ha szeretnél sminkest vagy fodrászt, szólj előre, és megnézzük, hogyan tudjuk beilleszteni a fotózásba.</dd>
 					</div>
 					<div class="faq__topic">
-						<dt class="faq__question">Ez nekem való egyáltalán?</dt>
-						<dd class="faq__answer">Ha szeretnél egy normális LinkedIn-, CV- vagy weboldalas portrét, akkor igen. A fotózás azoknak is szól, akik ritkán állnak kamera előtt, és nem tudják, hogyan kellene pózolni.</dd>
+						<dt class="faq__question">Önéletrajzhoz és LinkedInre is készülhetnek képek?</dt>
+						<dd class="faq__answer">Igen, az üzleti portréfotózás során önéletrajzhoz, LinkedIn-profilképhez és weboldalra is készítünk képeket. Előre megbeszéljük, hol szeretnéd használni őket, és ehhez igazítjuk a beállításokat és a képkivágásokat.</dd>
 					</div>
 				</dl>
 			</details>
@@ -292,7 +213,7 @@ title: Üzleti Portré
 				<summary class="faq__category">A fotózás alatt</summary>
 				<div class="faq__content">
 					<article class="faq__topic">
-						<p class="faq__question">Mi van, ha bénázok?</p>
+						<p class="faq__question">Mi történik, ha feszélyez a fotózás?</p>
 						<p class="faq__answer">Ez teljesen normális. Az emberek nagy része az első percekben furcsán érzi magát a kamera előtt. Pont ezért vezetlek végig a fotózáson.</p>
 					</article>
 					<article class="faq__topic">
@@ -307,7 +228,7 @@ title: Üzleti Portré
 					</article>
 					<article class="faq__topic">
 						<p class="faq__question">Tudunk többféle hangulatot csinálni?</p>
-						<p class="faq__answer">Igen, amennyire az idő és a cél engedi. Több outfittel és a világítás változtatásával többféle hangulatú képet tudunk készíteni, ha szükséges.</p>
+						<p class="faq__answer">Igen, amennyire az idő és a cél engedi. Többféle ruhával és a világítás változtatásával többféle hangulatú képet tudunk készíteni, ha szükséges.</p>
 					</article>
 					<article class="faq__topic">
 						<p class="faq__question">Láthatom a képeket fotózás közben?</p>
@@ -341,9 +262,9 @@ title: Üzleti Portré
 				<div class="faq__content">
 					<article class="faq__topic">
 						<p class="faq__question">Nem elég egy telefonos kép?</p>
-						<p class="faq__answer">Telefonos képpel is lehet próbálkozni, sokszor mégis marad benne valami esetleges: furcsa fény, előnytelen szög, bizonytalan arckifejezés.
+						<p class="faq__answer">Egy telefonos kép is lehet jó. A stúdiós fotózás akkor ad többet, ha szeretnél tudatosan megválasztott fényeket, egységes hátteret és segítséget a számodra előnyös beállásokhoz.
 						<br><br>
-						Egy headshot fotózáson kívülről figyelek rád. Látom, hogyan érdemes tartani a fejed, merre nézz, milyen fény áll jól, és melyik apró változtatástól lesz sokkal jobb a kép.
+						Egy üzleti portréfotózáson kívülről figyelek rád. Látom, hogyan érdemes tartani a fejed, merre nézz, milyen fény áll jól, és melyik apró változtatástól lesz sokkal jobb a kép.
 						<br><br>
 						A végeredmény egy olyan portré, amit magabiztosan használhatsz álláskereséskor, LinkedInen vagy a saját vállalkozásod felületein.</p>
 					</article>
@@ -361,66 +282,38 @@ title: Üzleti Portré
 					</article>
 				</div>
 			</details>
-			<a class="btn mt-3" href="#kapcsolat">Készen állok</a>
+            <details class="faq card card--soft">
+                <summary class="faq__category">Fizetés és időpont-módosítás</summary>
+                <dl class="faq__content">
+                    <div class="faq__topic"><dt class="faq__question">Választhatok kevesebb vagy több képet?</dt><dd class="faq__answer">A csomag legfeljebb 10 retusált portrét tartalmaz. Ha kevesebb képet választasz, a csomag ára változatlan. Ha több képet szeretnél, a további retusált portrék árát előre egyeztetjük.</dd></div>
+                    <div class="faq__topic"><dt class="faq__question">Kell előleget fizetnem?</dt><dd class="faq__answer">Jelenleg nem kérek előleget. A teljes díjat a fotózás után, a válogatóképek elküldése előtt rendezed.</dd></div>
+                    <div class="faq__topic"><dt class="faq__question">Mi van, ha változtatnom kell az időponton?</dt><dd class="faq__answer">Szólj minél hamarabb, és egyeztetünk egy új időpontot a stúdió szabad időpontjaihoz igazodva.</dd></div>
+                    <div class="faq__topic"><dt class="faq__question">Mikor kapom meg a képeket?</dt><dd class="faq__answer">A válogatóképeket a fotózás és a fizetés után 24 órán belül elküldöm. Miután kiválasztottad a kedvenceidet, a retusált portrékat további 24 órán belül megkapod.</dd></div>
+                </dl>
+            </details>
 		</div>
 	</section>
 
-	<section class="section contact" id="kapcsolat">
-		<div class="container">
-			<h2 class="section__title">Készítsünk olyan headshotot, amit szívesen használsz</h2>
-			<p>Ha régóta halogatod a profilképed lecserélését, valószínűleg csak egy nyugodt, jól vezetett fotózás hiányzik hozzá.</p>
-			<p>Írd meg az elérhetőséged, visszahívlak, és átbeszéljük, mire van szükséged.</p>
-			<div class="contact__grid">
-				<form class="form" name="kapcsolat" method="POST" action="/koszonom" netlify netlify-honeypot="very-special-field">
-					<div class="form__content">
-						<input type="hidden" name="form-name" value="kapcsolat">
-						<h3 class="form__title mt-0">Visszahívhatlak?</h3>
-						<p class="form__intro">Add meg a neved és a telefonszámod, én pedig felhívlak, hogy egyeztessük a részleteket.</p>
-						<div class="form__group">
-							<label class="form__label" for="nev">Neved <span class="form__asterisk">*</span></label>
-							<input class="form__input" type="text" id="nev" name="nev" autocomplete="name" required>
-						</div>
-						<div class="form__group">
-							<label class="form__label" for="telefon">Telefonszámod <span class="form__asterisk">*</span></label>
-							<input class="form__input" type="tel" id="telefon" name="telefon" autocomplete="tel" inputmode="tel" required>
-						</div>
-						<div class="form__group hidden">
-							<label class="form__label" for="very-special-field">Ezt ne töltsd ki :)</label>
-							<input class="form__input" type="text" id="very-special-field" name="very-special-field">
-						</div>
-						<button class="form__button btn btn--full" type="submit">Visszahívást kérek</button>
-						<p class="form-status" role="status" aria-live="polite" hidden></p>
-						<p class="form__disclaimer mb-0"><small><i class="fas fa-info-circle"></i>&nbsp; Az adataidat csak a kapcsolatfelvételhez használom. Felhívlak, átbeszéljük a részleteket, és hamar kiderül, hogy fogok-e tudni segíteni.</small></p>
-					</div>
-				</form>
-				<address class="contact__details card card--soft">
-					<h3 class="h4">Vagy keress az alábbi elérhetőségeken:</h3>
-					<ul class="contact__list list">
-						<li class="contact__item">
-							<p>
-								<strong>Emailben:</strong><br>
-								<a class="contact__link" href="mailto:hi@rolandszabo.photo">hi@rolandszabo.photo</a>
-							</p>
-						</li>
-						<li class="contact__item">
-							<p>
-								<strong>Telefonon:</strong><br>
-								<a class="contact__link" href="tel:+36205914620">+36 20 591 4620</a>
-							</p>
-						</li>
-						<li class="contact__item">
-							<p>
-								<strong>Instagram üzenetben:</strong><br>
-								<a class="contact__link" href="https://www.instagram.com/rolandszabo.portrait/" target="_blank" rel="noopener noreferrer">@rolandszabo.portrait</a>
-							</p>
-						</li>
-					</ul>
-				</address>
-			</div>
-		</div>
-	</section>
+
+    <section class="section company-summary">
+        <div class="container">
+            <details class="faq card card--soft">
+                <summary class="faq__category">Céges csapatnak keresel fotóst?</summary>
+                <div class="faq__content">
+                    <p>Céges portréfotózást is vállalok az irodátokban vagy külső helyszínen. Többfős fotózásra egyedi ajánlatot adok.</p>
+                    <figure class="clients card card--soft">
+                        <img class="clients__logo" src="/assets/images/client-marriott.webp" alt="Marriott Hotels International" width="300" height="250" loading="lazy" decoding="async">
+                        <img class="clients__logo" src="/assets/images/client-straumann.webp" alt="Straumann" width="300" height="250" loading="lazy" decoding="async">
+                        <img class="clients__logo" src="/assets/images/client-t&h-consulting.webp" alt="T&H Consulting" width="300" height="250" loading="lazy" decoding="async">
+                        <img class="clients__logo" src="/assets/images/client-jumpcut.webp" alt="JumpCut Productions" width="300" height="250" loading="lazy" decoding="async">
+                        <figcaption class="clients__caption">Céges ügyfeleim közül</figcaption>
+                    </figure>
+                    <a class="company-enquiry-link" href="mailto:hi@rolandszabo.photo?subject=C%C3%A9ges%20portr%C3%A9fot%C3%B3z%C3%A1s">Céges ajánlatot kérek e-mailben</a>
+                </div>
+            </details>
+        </div>
+    </section>
 </main>
-
 {% include "_includes/partials/lightbox.html" %}
 {% include "_includes/partials/schema-person.liquid" %}
 {% include "_includes/partials/schema-localbusiness.liquid" %}
