@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "author": "Hegedűs Mária",
+    "stars": 5,
+    "parts": [
+      "olyan képet készített rólam, amit életemben először nem takargattam, hanem büszkén mutogattam!"
+    ],
+    "date": "2025-05-26T15:54:15.955294Z",
+    "reviewId": "ChdDSUhNMG9nS0VLdXRxcEtHbDhINXdBRRAB",
+    "leadingEllipsis": true,
+    "image": "/assets/images/quote-marcsi.webp"
+  },
+  "featured": [
+    {
+      "author": "Dani Attila",
+      "stars": 5,
+      "parts": [
+        "Egyszerűen, érthetően instruált, folyamatosan segített, megmutatta, hogy mire számíthatok, és remekül oldotta a hangulatot, így a fotózás egy kifejezetten felszabadult és számomra meghatározó élményre sikeredett."
+      ],
+      "date": "2026-02-19T20:40:25.877253Z",
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pONFZuUjVXRUpxY25kS2NESnhaVTFIWlRSbVNYYxAB",
+      "topic": "Első portréfotózás",
+      "image": "/assets/images/quote-attila-dani.webp"
+    },
+    {
+      "author": "Farkas Judit",
+      "stars": 5,
+      "parts": [
+        "Féltem, hogy nagyon \"mű\" képek születnek majd a fotózáson, mert voltak rossz élményeim korábbról, sokszor elégedetlen vagyok magammal, de szerencsére Roland remek fotókat csinált, bátran fel merem őket használni bárhol."
+      ],
+      "date": "2024-07-31T08:00:01.977876Z",
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNicjZLSjF3RRAB",
+      "topic": "Természetes végeredmény",
+      "image": "/assets/images/quote-judit-farkas.webp"
+    },
+    {
+      "author": "Ulbrecht Aliz",
+      "stars": 5,
+      "parts": [
+        "Rolandot már harmadszor kértem fel fotózásra, most a készülő honlapomhoz szerettem volna profi képeket.",
+        "A végeredménnyel pedig nagyon elégedett vagyok! A képek azt tükrözik, amit elképzeltem."
+      ],
+      "date": "2024-10-30T11:09:43.14188Z",
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYdmM3SVNnEAE",
+      "topic": "Portrék a honlapra",
+      "image": "/assets/images/quote-aliz-ulbrecht.webp"
+    }
+  ],
+  "contact": {
+    "author": "Blaskó Lothár",
+    "stars": 5,
+    "parts": [
+      "Gyors kapcsolatfelvétel, folyékony kommunikáció. Könnyed ellazítás, beszélgetés. Természetes pillanatok, nagyszerű képek."
+    ],
+    "date": "2026-11-01T21:22:08.908847Z",
+    "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psclVHVnpXVXhTZURKRGVreERaSGw2TFU5aVMwRRAB",
+    "image": "/assets/images/quote-lothar-blasko.webp"
+  }
+}

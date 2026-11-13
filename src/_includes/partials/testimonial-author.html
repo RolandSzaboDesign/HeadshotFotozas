@@ -1,0 +1,7 @@
+<div class="testimonial-attribution">
+    {% if review.image %}<img class="testimonial-avatar" src="{{ review.image | assetUrl }}" alt="" width="48" height="48" loading="lazy" decoding="async">{% endif %}
+    <div class="testimonial-identity">
+        <cite class="testimonial-name">{{ review.author | escape }}</cite>
+        <span class="testimonial-source"><span class="review-stars" aria-label="5 csillag az 5-ből">★★★★★</span><span>Google-értékelés · részlet</span></span>
+    </div>
+</div>

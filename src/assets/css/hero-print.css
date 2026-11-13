@@ -1,6 +1,30 @@
 /* Photo-print experiment. Remove hero--print to return to the diagonal frame. */
+.hero__proof { display: contents; }
+.hero-testimonial { display: none; }
+@media (min-width: 1200px) {
+  .hero__proof {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    gap: 5.2rem;
+    width: 100%;
+    max-width: 44rem;
+  }
+  .hero-testimonial {
+    display: block;
+    margin: 0;
+    padding: 0 1rem;
+    color: var(--text);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
 .hero--print .hero__visual {
   max-width: 44rem;
+}
+@media (min-width: 1200px) {
+  .hero--print .hero__visual { max-width: 40rem; }
 }
 .hero--print .hero__image-card {
   box-sizing: border-box;

@@ -22,6 +22,7 @@ title: Üzleti Portré
 					<a class="cta-note" href="https://www.google.com/maps/place/Szab%C3%B3+Roland+%E2%80%A2+Portr%C3%A9+%C3%A9s+Aut%C3%B3+Fot%C3%B3z%C3%A1s/@47.4782699,19.0495662,17z/data=!4m8!3m7!1s0x8c17d069502b393b:0x36d12b762284bed!8m2!3d47.4782699!4d19.0495662!9m1!1b1!16s%2Fg%2F11l6x8pq4r?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">⭐ 100+ ötcsillagos Google értékelés</a>
 				</div>
 			</div>
+			<div class="hero__proof">
 			<figure class="hero__visual">
 				<svg class="hero-print-clip hero-print-clip--back" viewBox="0 0 44 104" aria-hidden="true" focusable="false"><path d="M5 17V76C5 100 39 100 39 76V30" /></svg>
 				<div class="hero__image-card">
@@ -29,6 +30,11 @@ title: Üzleti Portré
 				</div>
 				<svg class="hero-print-clip hero-print-clip--front" viewBox="0 0 44 104" aria-hidden="true" focusable="false"><path d="M14 31V73C14 86 30 86 30 73V17C30-1 5-1 5 17" /></svg>
 			</figure>
+			<blockquote class="hero-testimonial">
+                <p class="testimonial-text">„{% if testimonials.hero.leadingEllipsis %}…{% endif %}{{ testimonials.hero.parts | join: ' […] ' | escape }}”</p>
+                {% include "partials/testimonial-author.html", review: testimonials.hero %}
+            </blockquote>
+			</div>
 		</header>
 
     </section>
@@ -86,28 +92,18 @@ title: Üzleti Portré
     </section>
     <section data-analytics-section="reviews" class="section reviews-section" aria-labelledby="reviews-title">
         <div class="container">
-            <h2 class="section__title" id="reviews-title">Ők is izgultak a fotózás előtt</h2>
-            <div class="quotes quotes--selected"><blockquote class="quote card">
-					<img class="quote__photo" src="{{ '/assets/images/quote-marcsi.webp' | assetUrl }}" alt="Marcsi" width="200" height="300" loading="lazy" decoding="async">
-					<article class="quote__content">
-						<p class="quote__text">Olyan képet készített rólam, amit életemben először nem takargattam, hanem büszkén mutogattam.</p>
-						<cite class="quote__author">Marcsi, Omerta Digital</cite>
-					</article>
-				</blockquote>
-<blockquote class="quote card">
-					<img class="quote__photo" src="{{ '/assets/images/quote-bence.webp' | assetUrl }}" alt="Bence" width="200" height="300" loading="lazy" decoding="async">
-					<article class="quote__content">
-						<p class="quote__text">Tipikusan nem vagyok nagy rajongója ha fotóznak, de Roland ezt megváltoztatta. Nagyon közvetlen, már-már inkább baráti találkozásnak éreztem a fotózást.</p>
-						<cite class="quote__author">Bence</cite>
-					</article>
-				</blockquote>
-<blockquote class="quote card">
-					<img class="quote__photo" src="{{ '/assets/images/quote-boroka.webp' | assetUrl }}" alt="Boróka" width="200" height="300" loading="lazy" decoding="async">
-					<article class="quote__content">
-						<p class="quote__text">Nem igazán szoktam fotóztatni magam, és nem gondolom, hogy fotogén lennék… ahhoz képest, hogy nem hittem, hogy sikerül rólam jó képet készíteni, egészen pozitívan csalódtam.</p>
-						<cite class="quote__author">Boróka</cite>
-					</article>
-				</blockquote></div>
+            <h2 class="section__title" id="reviews-title">Akik már jártak nálam portréfotózáson</h2>
+            <div class="quotes quotes--selected">
+                {% for review in testimonials.featured %}
+                <blockquote class="quote card">
+                    <div class="quote__content">
+                        <p class="quote__topic">{{ review.topic | escape }}</p>
+                        <p class="testimonial-text">„{{ review.parts | join: ' […] ' | escape }}”</p>
+                        {% include "partials/testimonial-author.html", review: review %}
+                    </div>
+                </blockquote>
+                {% endfor %}
+            </div>
             <a class="review-source" href="https://www.google.com/maps/place/Szab%C3%B3+Roland+%E2%80%A2+Portr%C3%A9+%C3%A9s+Aut%C3%B3+Fot%C3%B3z%C3%A1s/@47.4782699,19.0495662,17z/data=!4m8!3m7!1s0x8c17d069502b393b:0x36d12b762284bed!8m2!3d47.4782699!4d19.0495662!9m1!1b1!16s%2Fg%2F11l6x8pq4r?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">100+ Google értékelés — olvasd el a visszajelzéseket</a>
         </div>
     </section>
@@ -130,8 +126,8 @@ title: Üzleti Portré
                     <p class="price h1 mb-1">45 000 Ft</p>
                     <p class="package-offer__price-note">Fotózással, stúdióbérléssel és retusálással együtt.</p>
                     <p class="payment-note">Előleget jelenleg nem kérek. A teljes díjat a fotózás után, a válogatóképek elküldése előtt rendezed. A díj rendezése után 24 órán belül elküldöm a válogatóképeket.</p>
-                    <a class="btn" href="#kapcsolat">Visszahívást kérek</a>
-                    <p class="cta-note">A visszahíváskérés még nem jelent foglalást.</p>
+                    <a class="btn" href="#kapcsolat">Beszéljük meg a részleteket</a>
+                    <p class="cta-note">A kapcsolatfelvétel még nem jelent foglalást.</p>
                 </div>
             </div>
         </div>
@@ -163,7 +159,8 @@ title: Üzleti Portré
 						<p class="form__disclaimer mb-0"><small>A visszahíváskérés még nem jelent foglalást. Az adataidat csak a kapcsolatfelvételhez használom. <a class="js-modal-open" href="#adatkezeles" aria-haspopup="dialog" aria-controls="adatkezeles">Adatkezelési tájékoztató</a></small></p>
 					</div>
 				</form>
-				<address class="contact__details">
+				<div class="contact__aside">
+                <address class="contact__details">
 					<h3 class="h4">Vagy keress az alábbi elérhetőségeken:</h3>
 					<ul class="contact__list">
 						<li class="contact__item">
@@ -186,6 +183,11 @@ title: Üzleti Portré
 						</li>
 					</ul>
 				</address>
+                <blockquote class="contact-testimonial">
+                    <p class="testimonial-text">„{{ testimonials.contact.parts | join: ' […] ' | escape }}”</p>
+                    {% include "partials/testimonial-author.html", review: testimonials.contact %}
+                </blockquote>
+                </div>
 			</div>
 		</div>
 	</section>
@@ -222,9 +224,7 @@ title: Üzleti Portré
 					</article>
 					<article class="faq__topic">
 						<p class="faq__question">Milyen háttere lesz a képnek?</p>
-						<p class="faq__answer">Alapvetően semleges, világos vagy középszürke hatású háttérrel dolgozunk, ami jól működik LinkedInen, CV-ben és céges felületeken is.
-						<br><br>
-						Ha konkrét elképzelésed van, például sötétebb háttér vagy más hangulat, szólj előre, és ehhez igazítom a stúdióbeállítást.</p>
+						<p class="faq__answer">Alapvetően semleges, világos vagy középszürke hatású háttérrel dolgozunk, ami jól működik LinkedInen, CV-ben és céges felületeken is. Ha konkrét elképzelésed van, például sötétebb háttér vagy más hangulat, szólj előre, és ehhez igazítom a stúdióbeállítást.</p>
 					</article>
 					<article class="faq__topic">
 						<p class="faq__question">Tudunk többféle hangulatot csinálni?</p>
@@ -262,11 +262,7 @@ title: Üzleti Portré
 				<div class="faq__content">
 					<article class="faq__topic">
 						<p class="faq__question">Nem elég egy telefonos kép?</p>
-						<p class="faq__answer">Egy telefonos kép is lehet jó. A stúdiós fotózás akkor ad többet, ha szeretnél tudatosan megválasztott fényeket, egységes hátteret és segítséget a számodra előnyös beállásokhoz.
-						<br><br>
-						Egy üzleti portréfotózáson kívülről figyelek rád. Látom, hogyan érdemes tartani a fejed, merre nézz, milyen fény áll jól, és melyik apró változtatástól lesz sokkal jobb a kép.
-						<br><br>
-						A végeredmény egy olyan portré, amit magabiztosan használhatsz álláskereséskor, LinkedInen vagy a saját vállalkozásod felületein.</p>
+						<p class="faq__answer">Egy telefonos kép is lehet jó. A stúdiós fotózás akkor ad többet, ha szeretnél tudatosan megválasztott fényeket, egységes hátteret és segítséget a számodra előnyös beállásokhoz. Egy üzleti portréfotózáson kívülről figyelek rád. Látom, hogyan érdemes tartani a fejed, merre nézz, milyen fény áll jól, és melyik apró változtatástól lesz sokkal jobb a kép. A végeredmény egy olyan portré, amit magabiztosan használhatsz álláskereséskor, LinkedInen vagy a saját vállalkozásod felületein.</p>
 					</article>
 					<article class="faq__topic">
 						<p class="faq__question">Több ember esetén adsz kedvezményt?</p>
